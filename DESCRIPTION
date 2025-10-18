@@ -1,0 +1,43 @@
+Package: RBiscvi
+Version: 0.1.0
+Type: Package
+Title: A visualizer of Zorn/Bascet data
+Maintainer: Johan Henriksson <johan.henriksson@umu.se>
+Description: RBiscvi exports data to Biscvi
+Authors@R: c(
+  person(given = "Johan", family = "Henriksson", email = "johan.henriksson@umu.se", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-7745-2844")),
+  person(given = "Laura", family = "Carroll", email = "laura.carroll@umu.se", role = c("aut"), comment = c(ORCID = "0000-0002-3677-0192")),
+  person("HenLab, CompMicroLab, and Collaborators", role = "fnd")
+  )
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+VignetteBuilder: knitr
+biocViews:
+Depends:
+    R (>= 4.0.0)
+Imports: 
+    Seurat (>= 4.0.0),
+    Signac,
+    Matrix (>= 1.5-0),
+    MatrixGenerics (>= 1.10.0),
+    MatrixExtra (>= 0.1.15),
+    ggplot2,
+    processx,
+    progress,
+    taxonomizr,
+    cli,
+    readr,
+    data.table,
+    naturalsort,
+    RCurl,
+    sparseMatrixStats (>= 1.10.0)
+Suggests: 
+    rmarkdown
+Remotes: github::henriksson-lab/zorn
+URL: https://github.com/henriksson-lab/zorn, https://henriksson-lab.github.io/zorn/
+BugReports: https://github.com/henriksson-lab/zorn/issues
+Collate:
+  'biscvi.R'
